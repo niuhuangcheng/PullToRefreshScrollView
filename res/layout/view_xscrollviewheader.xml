@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/view_xscrollheader_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/view_xscrollheader_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="松开即可刷新..." />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上次更新：" />
+
+            <TextView
+                android:id="@+id/view_xscrollheader_updatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014年3月14日 13:51" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/view_xscrollviewheader_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/view_xscrollheader_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-35dip"
+        android:src="@drawable/xlistview_arrow" />
+    
+    <ProgressBar 
+        android:id="@+id/view_xscrollviewheader_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/view_xscrollheader_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-47dip"/>
+
+</RelativeLayout>
